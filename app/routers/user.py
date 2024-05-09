@@ -13,14 +13,14 @@ router = APIRouter(
 # USERS
 @router.post("/", response_model=schemas.UserResponse, status_code=status.HTTP_201_CREATED)
 def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
-
     # Check if users exists
     existing_user = db.query(models.User).filter(
         models.User.email == user.email or models.User.id_number == user.id_number).first()
     if existing_user:
         raise HTTPException(status_code=status.HTTP_409_CONFLICT,
-                            detail="Sorry {}!, it seems you had signed up before, please login or reset your password "
-                                   "if lost. "
+                            detail="Sorry {}!, it seems you had signed up before, please login or reset your "
+                                   "password "
+                                   "if forgot."
                             .format(user.first_name))
     # Hash the user password
     user.password = utils.hash_password(user.password)
