@@ -123,8 +123,83 @@
             </llm>
           </llm>
         </chat>
+        <chat>
+          <internalId value="a11ef1e6-06db-47a5-8ac4-8a9a9d1e433c" />
+          <llm>
+            <llm>
+              <model value="anthropic/claude-3-sonnet-20240229" />
+              <provider value="Anthropic" />
+              <title value="Claude 3 Sonnet" />
+            </llm>
+          </llm>
+        </chat>
+        <chat>
+          <internalId value="c691e6cc-1515-437f-81d9-4d9d37129dc5" />
+        </chat>
+        <chat>
+          <internalId value="0f2cc87c-050a-44d9-9310-3dbfc73f6c6f" />
+          <llm>
+            <llm>
+              <model value="anthropic/claude-3-sonnet-20240229" />
+              <provider value="Anthropic" />
+              <title value="Claude 3 Sonnet" />
+            </llm>
+          </llm>
+        </chat>
+        <chat>
+          <internalId value="ee9a734c-207e-43f8-90a1-bbd89d87ce23" />
+          <llm>
+            <llm>
+              <model value="anthropic/claude-3-sonnet-20240229" />
+              <provider value="Anthropic" />
+              <title value="Claude 3 Sonnet" />
+            </llm>
+          </llm>
+        </chat>
+        <chat>
+          <internalId value="4b34a4ac-9400-44cb-9d61-de5a8a7c9bde" />
+          <llm>
+            <llm>
+              <model value="anthropic/claude-3-sonnet-20240229" />
+              <provider value="Anthropic" />
+              <title value="Claude 3 Sonnet" />
+            </llm>
+          </llm>
+        </chat>
+        <chat>
+          <enhancedContext>
+            <enhancedContext>
+              <remoteRepositories>
+                <list>
+                  <remoteRepository>
+                    <codebaseName value="github.com/pattiee/fastapi" />
+                  </remoteRepository>
+                </list>
+              </remoteRepositories>
+            </enhancedContext>
+          </enhancedContext>
+          <internalId value="a41b289e-0352-4f68-bd19-0015541d4ab5" />
+          <llm>
+            <llm>
+              <model value="anthropic/claude-3-sonnet-20240229" />
+              <provider value="Anthropic" />
+              <title value="Claude 3 Sonnet" />
+            </llm>
+          </llm>
+        </chat>
       </list>
     </chats>
+    <defaultEnhancedContext>
+      <enhancedContext>
+        <remoteRepositories>
+          <list>
+            <remoteRepository>
+              <codebaseName value="github.com/pattiee/fastapi" />
+            </remoteRepository>
+          </list>
+        </remoteRepositories>
+      </enhancedContext>
+    </defaultEnhancedContext>
     <defaultLlm>
       <llm>
         <model value="anthropic/claude-3-sonnet-20240229" />

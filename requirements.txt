@@ -44,3 +44,50 @@ ujson==5.9.0
 uvicorn==0.29.0
 watchfiles==0.21.0
 websockets==12.0
+
+
+
+
+
+version: "3"
+services:
+  api:
+    build: .
+    ports:
+      - 8000:8000
+    env_file:
+      - ./.env
+
+  postgres:
+#    environment:
+#      - DB_HOST=localhost
+#      - DB_PORT=5432
+#      - DB_PASSWORD=36975306
+#      - DB_NAME=fastapi_db
+#      - DB_USERNAME=postgres
+#      - SECRET_KEY=t65r76867r5666r6t87t6r687t876r6t76r576r76r76r
+#      - ALGORITHM=HS256
+#      - ACCESS_TOKEN_EXPIRE_MINUTES=30
+
+
+
+
+
+
+
+
+
+
+
+
+FROM python: 3.12.3
+
+WORKDIR /usr/src/app
+
+COPY requirements.txt ./
+
+RUN pip install --no-cache-dir requirements.txt
+
+COPY . .
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
